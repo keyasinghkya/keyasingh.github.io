@@ -4,7 +4,7 @@ subtitle: "*somehow, partially consumed in text, video and podcast formats"
 date: 2022-04-01
 type: "posts"
 layout: "single"
-featureimage: "/images/oceanic.jpeg"
+featureimage: "/images/rohail.png"
 categories:
   - notes-to-self
   - learning

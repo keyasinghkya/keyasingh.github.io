@@ -19,6 +19,8 @@ tags:
 draft: false
 ---
 {{< toc >}}
+{{< project-bg image="/gifs/insider-globe.gif"  width="150" height="200" >}}
+
 ## About
 Insider is a mixed reality performative exploration of the senses focusing on notions of embodiment and body ownership. It's a performance for 1 audience member at a time. Each audience member is accompanied by a performer who facilitates the experience. Choices made by the audience members can create unique experiences for each person who sees this work.
 

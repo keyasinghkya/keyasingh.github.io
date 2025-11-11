@@ -3,7 +3,7 @@ title: "mark fisher / ghosts of my life  / zagreb (21/05/2014)"
 date: 2025-10-06
 type: "posts"
 layout: "single"
-featureimage: "/images/oceanic.jpeg"
+featureimage: "/images/fisher.png"
 categories:
   - notes-to-self
 tags:
