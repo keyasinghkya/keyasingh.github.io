@@ -20,12 +20,13 @@ tags:
 draft: false
 ---
 {{< toc >}}
-{{< project-bg image="/gifs/insider-globe.gif"  width="150" height="200" >}}
 
 ## About
 Insider is a mixed reality performative exploration of the senses focusing on notions of embodiment and body ownership. It's a performance for 1 audience member at a time. Each audience member is accompanied by a performer who facilitates the experience. Choices made by the audience members can create unique experiences for each person who sees this work.
 
 I was one of the devisers of the piece along with working on technical solutions and creating the 360-degree video used in the performance. Since performing at the premiere in CED Brno (2019) and PAF Olomouc (2019), we have adapted and performed Insider for different venues across various countries. This includes site-specific installations which you can see [here](/projects/neither/insider-unwrapping).
+
+## Process
 
 ## Documentation
 {{< gallery
@@ -90,8 +91,6 @@ I was one of the devisers of the piece along with working on technical solutions
 {{< gallery
   title="CED (premiere)"
   location= "Brno, CZ (11/19)">}}
-
-## Process
 
 ## Press
 

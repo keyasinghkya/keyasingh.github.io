@@ -301,13 +301,47 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;li&gt;collective postproduction via the internet produces composite works&lt;/li&gt;
 &lt;li&gt;disassembling existing films and videos to conform to alternative, artificial political bodies&lt;/li&gt;
 &lt;li&gt;moments created by editing, in editing&lt;/li&gt;
-&lt;li&gt;physical intimacy is seen by her as a condenser of this notion of reproduction: redistributing affects, desire and creating bodies via movement and love
-&lt;video controls style=&#34;width: 70%; max-width: 400; max-height: 150; margin: 2rem auto; display: block; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;https://va.media.tumblr.com/tumblr_t5gewxOWgz1uflz58.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser doesn&#39;t support video.
-  &lt;/video&gt;
-&lt;/li&gt;
+&lt;li&gt;physical intimacy is seen by her as a condenser of this notion of reproduction: redistributing affects, desire and creating bodies via movement and love&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class=&#34;vimeo-responsive &#34; style=&#34;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/1137027038?responsive=1&#34;
+          frameborder=&#34;0&#34;
+          allow=&#34;autoplay; fullscreen; picture-in-picture&#34;
+          allowfullscreen&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.vimeo-responsive {
+  position: relative;
+  padding-bottom: 56.25%;  
+  height: 0;
+  overflow: hidden;
+  max-width: 1067px;
+  margin: 0.75rem auto;  
+}
+
+.vimeo-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vimeo-responsive.portrait {
+  padding-bottom: 177.78%;  
+  max-width: 450px;
+  margin: 0.5rem auto;  
+}
+
+@media (max-width: 768px) {
+  .vimeo-responsive.portrait {
+    max-width: 90%;
+  }
+}
+&lt;/style&gt;
+
 
 &lt;h2 class=&#34;relative group&#34;&gt;2. In Defense of the Poor Image (pp 31-45)
     &lt;div id=&#34;2-in-defense-of-the-poor-image-pp-31-45&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
@@ -331,13 +365,47 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;li&gt;the poor image is caught in a capitalistic tension = resistance against the fetish value of high-resolution x being perfectly integrated into information capitalism due to its compressed attention spans&lt;/li&gt;
 &lt;li&gt;the poor image constructs global networks of translations or mistranslations along with new publics and debates&lt;/li&gt;
 &lt;li&gt;the poor image creates saturation and confusion along with moments of thought and affect&lt;/li&gt;
-&lt;li&gt;the poor image is no longer about the original or the real; it is about reality
-&lt;video controls style=&#34;width: 70%; max-width: 400; max-height: 150; margin: 2rem auto; display: block; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;https://va.media.tumblr.com/tumblr_t5gey7DOSD1uflz58.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser doesn&#39;t support video.
-  &lt;/video&gt;
-&lt;/li&gt;
+&lt;li&gt;the poor image is no longer about the original or the real; it is about reality&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class=&#34;vimeo-responsive &#34; style=&#34;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/1137027007?responsive=1&#34;
+          frameborder=&#34;0&#34;
+          allow=&#34;autoplay; fullscreen; picture-in-picture&#34;
+          allowfullscreen&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.vimeo-responsive {
+  position: relative;
+  padding-bottom: 56.25%;  
+  height: 0;
+  overflow: hidden;
+  max-width: 1067px;
+  margin: 0.75rem auto;  
+}
+
+.vimeo-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vimeo-responsive.portrait {
+  padding-bottom: 177.78%;  
+  max-width: 450px;
+  margin: 0.5rem auto;  
+}
+
+@media (max-width: 768px) {
+  .vimeo-responsive.portrait {
+    max-width: 90%;
+  }
+}
+&lt;/style&gt;
+
 
 &lt;h2 class=&#34;relative group&#34;&gt;3. The Spam of the Earth: Withdrawal from Representation (pp 160-175)
     &lt;div id=&#34;3-the-spam-of-the-earth-withdrawal-from-representation-pp-160-175&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
@@ -361,10 +429,44 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;li&gt;image spam is a representation that remains invisible&lt;/li&gt;
 &lt;li&gt;people might happen by jointly making the image and not by being represented in one&lt;/li&gt;
 &lt;li&gt;image spam people are double agents; they are continuously smiling but not saying anything !!!
-&lt;video controls style=&#34;width: 70%; max-width: 400; max-height: 150; margin: 2rem auto; display: block; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;https://va.media.tumblr.com/tumblr_t5gezrDdBv1uflz58.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser doesn&#39;t support video.
-  &lt;/video&gt;
+&lt;div class=&#34;vimeo-responsive portrait&#34; style=&#34;margin-top: 0.5rem; margin-bottom: 0.5rem;&#34;&gt;
+    &lt;iframe src=&#34;https://player.vimeo.com/video/1137026959?responsive=1&#34;
+            frameborder=&#34;0&#34;
+            allow=&#34;autoplay; fullscreen; picture-in-picture&#34;
+            allowfullscreen&gt;
+    &lt;/iframe&gt;
+  &lt;/div&gt;
+  
+  &lt;style&gt;
+  .vimeo-responsive {
+    position: relative;
+    padding-bottom: 56.25%;  
+    height: 0;
+    overflow: hidden;
+    max-width: 1067px;
+    margin: 0.75rem auto;  
+  }
+  
+  .vimeo-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vimeo-responsive.portrait {
+    padding-bottom: 177.78%;  
+    max-width: 450px;
+    margin: 0.5rem auto;  
+  }
+  
+  @media (max-width: 768px) {
+    .vimeo-responsive.portrait {
+      max-width: 90%;
+    }
+  }
+  &lt;/style&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -390,10 +492,44 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;li&gt;recognising things as equals releases its potential energy, agency&lt;/li&gt;
 &lt;li&gt;(referring to benjamin’s notion of history as a pile of rubble as seen from the pov of an angel): we are not the angel, we are the rubble&lt;/li&gt;
 &lt;li&gt;“Because they (actors) love the pixel, not the hero. The hero is dead. Long live the thing.”
-&lt;video controls style=&#34;width: 70%; max-width: 400; max-height: 150; margin: 2rem auto; display: block; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;https://va.media.tumblr.com/tumblr_t5gf3qnISV1uflz58.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser doesn&#39;t support video.
-  &lt;/video&gt;
+&lt;div class=&#34;vimeo-responsive portrait&#34; style=&#34;margin-top: 0.5rem; margin-bottom: 0.5rem;&#34;&gt;
+    &lt;iframe src=&#34;https://player.vimeo.com/video/1137026915?responsive=1&#34;
+            frameborder=&#34;0&#34;
+            allow=&#34;autoplay; fullscreen; picture-in-picture&#34;
+            allowfullscreen&gt;
+    &lt;/iframe&gt;
+  &lt;/div&gt;
+  
+  &lt;style&gt;
+  .vimeo-responsive {
+    position: relative;
+    padding-bottom: 56.25%;  
+    height: 0;
+    overflow: hidden;
+    max-width: 1067px;
+    margin: 0.75rem auto;  
+  }
+  
+  .vimeo-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vimeo-responsive.portrait {
+    padding-bottom: 177.78%;  
+    max-width: 450px;
+    margin: 0.5rem auto;  
+  }
+  
+  @media (max-width: 768px) {
+    .vimeo-responsive.portrait {
+      max-width: 90%;
+    }
+  }
+  &lt;/style&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -417,10 +553,44 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;li&gt;the art field is full of contradictions = a place of power-mongering, financial engineering, massive manipulations + a place of commonality, movement, energy and desire&lt;/li&gt;
 &lt;li&gt;art is not outside politics but politics resides within its production, distribution and reception&lt;/li&gt;
 &lt;li&gt;if we embrace its inherent politics, we might surpass the plane of the politics of representation
-&lt;video controls style=&#34;width: 70%; max-width: 400; max-height: 150; margin: 2rem auto; display: block; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;https://va.media.tumblr.com/tumblr_t5k1yhDKz71uflz58.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser doesn&#39;t support video.
-  &lt;/video&gt;
+&lt;div class=&#34;vimeo-responsive portrait&#34; style=&#34;margin-top: 0.5rem; margin-bottom: 0.5rem;&#34;&gt;
+    &lt;iframe src=&#34;https://player.vimeo.com/video/1137026894?responsive=1&#34;
+            frameborder=&#34;0&#34;
+            allow=&#34;autoplay; fullscreen; picture-in-picture&#34;
+            allowfullscreen&gt;
+    &lt;/iframe&gt;
+  &lt;/div&gt;
+  
+  &lt;style&gt;
+  .vimeo-responsive {
+    position: relative;
+    padding-bottom: 56.25%;  
+    height: 0;
+    overflow: hidden;
+    max-width: 1067px;
+    margin: 0.75rem auto;  
+  }
+  
+  .vimeo-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vimeo-responsive.portrait {
+    padding-bottom: 177.78%;  
+    max-width: 450px;
+    margin: 0.5rem auto;  
+  }
+  
+  @media (max-width: 768px) {
+    .vimeo-responsive.portrait {
+      max-width: 90%;
+    }
+  }
+  &lt;/style&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -443,10 +613,44 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;li&gt;in contrast, ici et ailleurs chains material sourced from around the world, then mixed in a wild manner - creating the impression that the images attain their significance through this act of chaining/montage&lt;/li&gt;
 &lt;li&gt;the voice of the people simultaneously organises the principle of concatenation and suppression&lt;/li&gt;
 &lt;li&gt;reactionary (if not outright fascist) movements involve tremendous dynamic in their elements only to leave everything as it was before
-&lt;video controls style=&#34;width: 70%; max-width: 400; max-height: 150; margin: 2rem auto; display: block; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;https://va.media.tumblr.com/tumblr_t5k21icKif1uflz58.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser doesn&#39;t support video.
-  &lt;/video&gt;
+&lt;div class=&#34;vimeo-responsive portrait&#34; style=&#34;margin-top: 0.5rem; margin-bottom: 0.5rem;&#34;&gt;
+    &lt;iframe src=&#34;https://player.vimeo.com/video/1137026862?responsive=1&#34;
+            frameborder=&#34;0&#34;
+            allow=&#34;autoplay; fullscreen; picture-in-picture&#34;
+            allowfullscreen&gt;
+    &lt;/iframe&gt;
+  &lt;/div&gt;
+  
+  &lt;style&gt;
+  .vimeo-responsive {
+    position: relative;
+    padding-bottom: 56.25%;  
+    height: 0;
+    overflow: hidden;
+    max-width: 1067px;
+    margin: 0.75rem auto;  
+  }
+  
+  .vimeo-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vimeo-responsive.portrait {
+    padding-bottom: 177.78%;  
+    max-width: 450px;
+    margin: 0.5rem auto;  
+  }
+  
+  @media (max-width: 768px) {
+    .vimeo-responsive.portrait {
+      max-width: 90%;
+    }
+  }
+  &lt;/style&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 

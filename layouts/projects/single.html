@@ -1,13 +1,13 @@
 {{ define "main" }}
 <article class="project-page prose dark:prose-invert max-w-none" id="project-content">
-  <header class="mb-10 pt-32" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);">
-    <h1 class="mt-0 text-4xl font-extrabold text-white mb-2">{{ .Title }}</h1>
+  <header class="mb-10 pt-32">
+    <h1 class="mt-0 text-4xl font-extrabold mb-2">{{ .Title }}</h1>
 
     {{ if .Params.subtitle }}
-    <p class="text-xl text-neutral-200 mb-3">{{ .Params.subtitle }}</p>
+    <p class="text-xl mb-3">{{ .Params.subtitle }}</p>
     {{ end }}
 
-    <div class="project-meta text-sm text-neutral-200 flex flex-wrap items-center gap-2 mb-3">
+    <div class="project-meta text-sm flex flex-wrap items-center gap-2 mb-3">
       {{ if .Params.year }}
       <span>{{ .Params.year }}</span>
       {{ end }}
@@ -28,7 +28,7 @@
     </div>
 
     {{ if .Params.tags }}
-    <div class="flex flex-wrap gap-1.5">
+    <div class="flex flex-wrap gap-2">
       {{ range .Params.tags }}
       <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
          class="text-xs px-2 py-1 rounded border border-primary-400 bg-black/40 text-primary-300 backdrop-blur-sm no-underline hover:bg-primary-600 hover:text-white transition-colors">

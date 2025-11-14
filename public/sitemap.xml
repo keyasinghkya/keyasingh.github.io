@@ -111,6 +111,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/projects/live/rickey-mouse/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/live/lunchmeat2020/</loc>
     <lastmod>2020-10-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>

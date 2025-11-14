@@ -32,7 +32,8 @@ draft: false
 - disassembling existing films and videos to conform to alternative, artificial political bodies
 - moments created by editing, in editing
 - physical intimacy is seen by her as a condenser of this notion of reproduction: redistributing affects, desire and creating bodies via movement and love
-  {{< video src="https://va.media.tumblr.com/tumblr_t5gewxOWgz1uflz58.mp4" >}}
+
+{{< vimeo id="1137027038">}}
 
 ## 2. In Defense of the Poor Image (pp 31-45)
 - the poor image is copy that deteriorates as it accelerates into circulation/motion
@@ -48,7 +49,8 @@ draft: false
 - the poor image constructs global networks of translations or mistranslations along with new publics and debates
 - the poor image creates saturation and confusion along with moments of thought and affect
 - the poor image is no longer about the original or the real; it is about reality
-  {{< video src="https://va.media.tumblr.com/tumblr_t5gey7DOSD1uflz58.mp4" >}}
+
+{{< vimeo id="1137027007">}}
 
 ## 3. The Spam of the Earth: Withdrawal from Representation (pp 160-175)
 - a reserve army of digitally enhanced creatures who resemble the minor demons and angels of mystic speculation, luring, pushing, and blackmailing people into the profane rapture of consumption
@@ -63,7 +65,7 @@ draft: false
 - image spam is a representation that remains invisible
 - people might happen by jointly making the image and not by being represented in one
 - image spam people are double agents; they are continuously smiling but not saying anything !!!
-  {{< video src="https://va.media.tumblr.com/tumblr_t5gezrDdBv1uflz58.mp4" >}}
+  {{< vimeo id="1137026959" portrait="true" >}}
 
 ## 4. A Thing Like You and Me (pp 46-59)
 - 1977 brings the end of the New Left (refers to RAF’s descent into political sectarianism) + the Strangers declare that “heroism is over”
@@ -78,7 +80,7 @@ draft: false
 - recognising things as equals releases its potential energy, agency
 - (referring to benjamin’s notion of history as a pile of rubble as seen from the pov of an angel): we are not the angel, we are the rubble
 - “Because they (actors) love the pixel, not the hero. The hero is dead. Long live the thing.”
-  {{< video src="https://va.media.tumblr.com/tumblr_t5gf3qnISV1uflz58.mp4" >}}
+  {{< vimeo id="1137026915" portrait="true" >}}
 
 ## 5. Politics of Art: Contemporary Art and the Transition to Post-Democracy (pp 92-101)
 - politics of art = viewing the field of art as a place of work
@@ -91,7 +93,7 @@ draft: false
 - the art field is full of contradictions = a place of power-mongering, financial engineering, massive manipulations + a place of commonality, movement, energy and desire
 - art is not outside politics but politics resides within its production, distribution and reception
 - if we embrace its inherent politics, we might surpass the plane of the politics of representation
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k1yhDKz71uflz58.mp4" >}}
+  {{< vimeo id="1137026894" portrait="true" >}}
 
 ## 6. The Articulation of Protest (pp 77-91)
 - articulation of protest has 2 levels: 1 = verbalisation, vocalisation, visualisation of the protest = symbols +
@@ -103,7 +105,7 @@ draft: false
 - in contrast, ici et ailleurs chains material sourced from around the world, then mixed in a wild manner - creating the impression that the images attain their significance through this act of chaining/montage
 - the voice of the people simultaneously organises the principle of concatenation and suppression
 - reactionary (if not outright fascist) movements involve tremendous dynamic in their elements only to leave everything as it was before
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k21icKif1uflz58.mp4" >}}
+  {{< vimeo id="1137026862" portrait="true" >}}
 
 ## 7. Is a Museum a Factory? (pp 60-76)
 transition of factory —> museum = disappearance of traditional fordist factories + mass production, commercialisation of cinema
@@ -124,7 +126,7 @@ transition of factory —> museum = disappearance of traditional fordist factori
 - the solution^^ = guards and spectators work together in shifts x allowing for a meeting of spectators and museum workers to understand the work they are consuming/guarding
 - by displaying absence and lack of subject, museums simultaneously activate a desire for it
 - in order to escape the relentless productivity of museums-as-social-factories, political cinema might create whats missing - an exit
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k234bET91uflz58.mp4" >}}
+  {{< vimeo id="1137026838" portrait="true" >}}
 
 ## 8. Art as Occupation: Claims for an Autonomy of Life (pp 102-120)
 - work = means to an end/wage/reward vs occupation = is the end itself, it is a process, it holds its own gratification
@@ -145,7 +147,7 @@ transition of factory —> museum = disappearance of traditional fordist factori
 - our phones function as purveyors in the territories of occupation - manipulating, reflecting, altering, recording, interrupting/invading, commanding = "Your life condenses into an object in the palm of your hand, ready to be slammed into a wall and still grinning at you, shattered, dictating deadlines, recording, interrupting."
 - the territory of occupation is where time and space collide by sudden bursts of "capital, despair and desire running wild"
 - "Both temporal and spatial occupation intersect to produce individualized timelines, intensified by fragmented circuits of production and augmented military realities." these realities are not passive/subjective - instead they create individuals via occupation
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k25hpUxR1uflz58.mp4" >}}
+  {{< vimeo id="1137026812" portrait="true" >}}
 
 ## 9. In Free Fall: A Thought Experiment on Vertical Perspective (pp 12-30)
 - many contemporary philosophers point out that we are living in a constant state of groundlessness ~ if this is the case, we must be in a permanent or intermittent state of free fall
@@ -167,7 +169,8 @@ transition of factory —> museum = disappearance of traditional fordist factori
 - falling = ruin, demise + love, abandon + passion, surrender + decline, catastrophe + corruption, liberation + a condition that turns people into things and vice versa
 - "the perspective of free fall teaches us to consider a social and political dreamscape of radicalized class war from above, one that throws jaw-dropping social inequalities into sharp focus"
 - falling promises no community, but a shifting formation!!
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k27j6oIy1uflz58.mp4" >}}
+  {{< vimeo id="1137026769" portrait="true" >}}
+
 
 ## 10. Freedom from Everything: Freelancers and Mercenaries (pp 121-137)
 - george michael’s freedom characterised freedom by its absence, lack of property, absence/destruction of all props (pointing at the singer’s public persona) - negative freedoms
@@ -186,7 +189,8 @@ transition of factory —> museum = disappearance of traditional fordist factori
 - george michael’s freedom: he never appears himself but is represented by supercommodities and supermodels + his stage insignia are blown up in explosions = there is nothing left ~ only anonymity, alienation, commodification.
 - only acceptance of no return from NF will open up new freedoms / without the exclusion of solidarity
 - “the new freedom: you’ve got to give what you take”
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k2alIgOU1uflz58.mp4" >}}
+
+{{< vimeo id="1137026744" portrait="true" >}}
 
 ## 11. Missing People: Entanglement, Superposition, and Exhumation as Sites of Indeterminacy (pp 138-159)
 - quantum theory on Schrödinger’s cat: there were in fact two cats - one alive, one dead — locked in a state of copresence + material entanglement
@@ -204,7 +208,7 @@ transition of factory —> museum = disappearance of traditional fordist factori
 - pictorial evidence taken on burial sites of PKK fighters in Turkey - the invisibility of evidence is politically constructed and maintained by known violence — these can be seen as poor images of the conditions that brought them into being — as low-resolution monads ~ their poverty is not a lack but an additional layer of information centred on form rather than content
 - positivism is another name for the epistemic (conscious) privilege — it denies the existence of limbos in the rule of law + shields itself from the unsettling thought that probability cannot reign in possibility
 - "she (justice) carefully runs her fingers over the edges, gaps, and rifts of rugged and glossy images, of low-resolution monads left in fractional space, registering their tectonic profile, feeling their bruises, fully confident that the impossible can and indeed will happen."
-  {{< video src="https://va.media.tumblr.com/tumblr_t5k2f8qP401uflz58.mp4" >}}
+  {{< vimeo id="1137026713" portrait="true" >}}
 
 ## ~ supporting text ~
 I found Steyerl's writing style to be incredibly dynamic and engaging. The language is easy to follow and yet I found myself often rereading and pausing to think about specific sentences. The topics she writes about are very close to my own interests in media and art. Her entry point in these essays is through film theory and film history. I chose a different way to enter my reading practice here with an active assessment of social media content.

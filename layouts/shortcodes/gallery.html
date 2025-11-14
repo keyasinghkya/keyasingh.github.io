@@ -1,4 +1,4 @@
-<div class="gallery-box border-4 border-neutral-300 dark:border-neutral-600 rounded-lg p-6 my-8">
+<div class="gallery-box border-4 border-neutral-300 dark:border-neutral-600 rounded-lg p-6 my-4">
   {{ if .Get "title" }}
   <h3 class="gallery-title text-xl font-bold mb-1">{{ .Get "title" }}</h3>
   {{ end }}
@@ -22,17 +22,19 @@
   <div class="image-gallery">
     {{ $imagesParam := .Get "images" | default "" }}
     {{ $vimeosParam := .Get "vimeos" | default "" }}
-    {{ $tumblrsParam := .Get "tumblrs" | default "" }}
+    {{ $youtubesParam := .Get "youtubes" | default "" }}
+    {{ $orientationsParam := .Get "orientations" | default "" }}
     {{ $captionsParam := .Get "captions" | default "" }}
 
     {{ $images := cond (ne $imagesParam "") (split $imagesParam ",") (slice) }}
     {{ $vimeos := cond (ne $vimeosParam "") (split $vimeosParam ",") (slice) }}
-    {{ $tumblrs := cond (ne $tumblrsParam "") (split $tumblrsParam ",") (slice) }}
+    {{ $youtubes := cond (ne $youtubesParam "") (split $youtubesParam ",") (slice) }}
+    {{ $orientations := cond (ne $orientationsParam "") (split $orientationsParam ",") (slice) }}
     {{ $captions := cond (ne $captionsParam "") (split $captionsParam "|") (slice) }}
 
     {{ $maxLen := len $images }}
     {{ if gt (len $vimeos) $maxLen }}{{ $maxLen = len $vimeos }}{{ end }}
-    {{ if gt (len $tumblrs) $maxLen }}{{ $maxLen = len $tumblrs }}{{ end }}
+    {{ if gt (len $youtubes) $maxLen }}{{ $maxLen = len $youtubes }}{{ end }}
 
     {{ range $index := seq 0 (sub $maxLen 1) }}
       {{ $image := "" }}
@@ -41,30 +43,35 @@
       {{ $vimeoID := "" }}
       {{ if lt $index (len $vimeos) }}{{ $vimeoID = trim (index $vimeos $index) " " }}{{ end }}
 
-      {{ $tumblr := "" }}
-      {{ if lt $index (len $tumblrs) }}{{ $tumblr = trim (index $tumblrs $index) " " }}{{ end }}
+      {{ $youtubeID := "" }}
+      {{ if lt $index (len $youtubes) }}{{ $youtubeID = trim (index $youtubes $index) " " }}{{ end }}
+
+      {{ $orientation := "landscape" }}
+      {{ if lt $index (len $orientations) }}{{ $orientation = trim (index $orientations $index) " " }}{{ end }}
 
       {{ $caption := "" }}
       {{ if lt $index (len $captions) }}{{ $caption = index $captions $index }}{{ end }}
 
       <div class="gallery-item">
         {{ if ne $vimeoID "" }}
-          <div class="video-embed">
+          <div class="video-embed{{ if eq $orientation "portrait" }} portrait{{ end }}">
             <iframe src="https://player.vimeo.com/video/{{ $vimeoID }}"
                     frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen>
             </iframe>
           </div>
-        {{ else if ne $tumblr "" }}
-          <div class="video-embed">
-            <video controls preload="metadata">
-              <source src="{{ $tumblr }}" type="video/mp4">
-            </video>
+        {{ else if ne $youtubeID "" }}
+          <div class="video-embed{{ if eq $orientation "portrait" }} portrait{{ end }}">
+            <iframe src="https://www.youtube.com/embed/{{ $youtubeID }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
           </div>
         {{ else if ne $image "" }}
           {{ if or (strings.HasSuffix $image ".mp4") (strings.HasSuffix $image ".mov") }}
-            <div class="video-embed">
+            <div class="video-embed{{ if eq $orientation "portrait" }} portrait{{ end }}">
               <video controls preload="metadata">
                 <source src="{{ $image }}" type="video/mp4">
               </video>
@@ -84,35 +91,56 @@
 
 <style>
   .gallery-title {
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
   }
 
   .gallery-location {
-    color: rgb(var(--color-primary-400));
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7);
+    color: rgb(var(--color-primary-600));
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
   }
 
   .dark .gallery-location {
-    color: rgb(var(--color-primary-300));
+    color: rgb(var(--color-primary-400));
   }
 
   .gallery-description {
-    color: rgba(255, 255, 255, 0.95);
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
-  }
-
-  .dark .gallery-description {
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
   }
 
   .gallery-credits {
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    opacity: 0.7;
   }
 
+  /* Only add shadows in dark mode or with background images */
+  .dark .gallery-title,
+  .dark .gallery-description,
   .dark .gallery-credits {
-    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .dark .gallery-location {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  /* When there's a project background */
+  body:has(.project-bg-overlay) .gallery-title,
+  body:has(.project-bg-overlay) .gallery-description,
+  body:has(.project-bg-overlay) .gallery-credits {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    color: white;
+  }
+
+  body:has(.project-bg-overlay) .gallery-location {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    color: rgb(var(--color-primary-400));
   }
 
   .image-gallery {
@@ -127,6 +155,9 @@
   .gallery-item {
     flex-shrink: 0;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .image-gallery img {
@@ -135,27 +166,57 @@
     object-fit: cover;
     border-radius: 8px;
     display: block;
+    align-self: flex-start;
   }
 
+  /* Landscape videos (16:9) */
   .video-embed {
     height: 600px;
-    min-width: 800px;
+    width: 1067px; /* 16:9 ratio */
     border-radius: 8px;
     overflow: hidden;
     background: black;
+    display: block;
+    flex-shrink: 0;
   }
 
   .video-embed iframe,
   .video-embed video {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+  }
+
+  /* Portrait videos (9:16) - detect via container query fallback */
+  .video-embed iframe[src*="vimeo"] {
+    aspect-ratio: 16/9;
+  }
+
+  /* Override for portrait - you'll add class manually if needed */
+  .video-embed.portrait {
+    width: 338px; /* 9:16 ratio at 600px height */
+  }
+
+  .video-embed.portrait iframe,
+  .video-embed.portrait video {
+    aspect-ratio: 9/16;
   }
 
   .image-caption {
     margin-top: 0.5rem;
     font-size: 0.875rem;
     color: rgb(var(--color-neutral-600));
-    max-width: 800px;
+    max-width: 450px;
+  }
+
+  /* Wider captions for landscape videos */
+  .video-embed ~ .image-caption {
+    max-width: 1067px;
+  }
+
+  /* Narrower captions for portrait videos */
+  .video-embed.portrait ~ .image-caption {
+    max-width: 338px;
   }
 
   .dark .image-caption {
