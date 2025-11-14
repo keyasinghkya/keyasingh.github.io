@@ -7,6 +7,7 @@ categories:
   - neither
   - 2020
 tags:
+  - "#jpeg2dicom"
   - czech republic
   - online
   - body stuff

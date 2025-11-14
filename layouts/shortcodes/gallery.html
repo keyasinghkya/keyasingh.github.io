@@ -3,7 +3,6 @@
   <h3 class="gallery-title text-xl font-bold mb-1">{{ .Get "title" }}</h3>
   {{ end }}
 
-  <!-- Location and Date on same line -->
   {{ if or (.Get "location") (.Get "date") }}
   <p class="gallery-location text-sm mb-2">
     {{ if .Get "location" }}{{ .Get "location" }}{{ end }}
@@ -12,24 +11,71 @@
   </p>
   {{ end }}
 
-  <!-- Short description text -->
   {{ if .Get "description" }}
   <p class="gallery-description text-sm mb-2">{{ .Get "description" }}</p>
   {{ end }}
 
-  <!-- Image credits -->
   {{ if .Get "credits" }}
   <p class="gallery-credits text-xs italic mb-4">{{ .Get "credits" }}</p>
   {{ end }}
 
   <div class="image-gallery">
-    {{ $images := split (.Get "images") "," }}
-    {{ $captions := split (.Get "captions" | default "") "|" }}
-    {{ range $index, $image := $images }}
+    {{ $imagesParam := .Get "images" | default "" }}
+    {{ $vimeosParam := .Get "vimeos" | default "" }}
+    {{ $tumblrsParam := .Get "tumblrs" | default "" }}
+    {{ $captionsParam := .Get "captions" | default "" }}
+
+    {{ $images := cond (ne $imagesParam "") (split $imagesParam ",") (slice) }}
+    {{ $vimeos := cond (ne $vimeosParam "") (split $vimeosParam ",") (slice) }}
+    {{ $tumblrs := cond (ne $tumblrsParam "") (split $tumblrsParam ",") (slice) }}
+    {{ $captions := cond (ne $captionsParam "") (split $captionsParam "|") (slice) }}
+
+    {{ $maxLen := len $images }}
+    {{ if gt (len $vimeos) $maxLen }}{{ $maxLen = len $vimeos }}{{ end }}
+    {{ if gt (len $tumblrs) $maxLen }}{{ $maxLen = len $tumblrs }}{{ end }}
+
+    {{ range $index := seq 0 (sub $maxLen 1) }}
+      {{ $image := "" }}
+      {{ if lt $index (len $images) }}{{ $image = trim (index $images $index) " " }}{{ end }}
+
+      {{ $vimeoID := "" }}
+      {{ if lt $index (len $vimeos) }}{{ $vimeoID = trim (index $vimeos $index) " " }}{{ end }}
+
+      {{ $tumblr := "" }}
+      {{ if lt $index (len $tumblrs) }}{{ $tumblr = trim (index $tumblrs $index) " " }}{{ end }}
+
+      {{ $caption := "" }}
+      {{ if lt $index (len $captions) }}{{ $caption = index $captions $index }}{{ end }}
+
       <div class="gallery-item">
-        <img src="{{ trim $image " " }}" alt="" loading="lazy">
-        {{ if index $captions $index }}
-        <p class="image-caption">{{ index $captions $index }}</p>
+        {{ if ne $vimeoID "" }}
+          <div class="video-embed">
+            <iframe src="https://player.vimeo.com/video/{{ $vimeoID }}"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        {{ else if ne $tumblr "" }}
+          <div class="video-embed">
+            <video controls preload="metadata">
+              <source src="{{ $tumblr }}" type="video/mp4">
+            </video>
+          </div>
+        {{ else if ne $image "" }}
+          {{ if or (strings.HasSuffix $image ".mp4") (strings.HasSuffix $image ".mov") }}
+            <div class="video-embed">
+              <video controls preload="metadata">
+                <source src="{{ $image }}" type="video/mp4">
+              </video>
+            </div>
+          {{ else }}
+            <img src="{{ $image }}" alt="" loading="lazy" decoding="async">
+          {{ end }}
+        {{ end }}
+
+        {{ if ne $caption "" }}
+        <p class="image-caption">{{ $caption }}</p>
         {{ end }}
       </div>
     {{ end }}
@@ -39,14 +85,12 @@
 <style>
   .gallery-title {
     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9),
-                 0 0 20px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .gallery-location {
     color: rgb(var(--color-primary-400));
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9),
-                 0 0 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7);
   }
 
   .dark .gallery-location {
@@ -93,20 +137,34 @@
     display: block;
   }
 
+  .video-embed {
+    height: 600px;
+    min-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: black;
+  }
+
+  .video-embed iframe,
+  .video-embed video {
+    width: 100%;
+    height: 100%;
+  }
+
   .image-caption {
     margin-top: 0.5rem;
     font-size: 0.875rem;
     color: rgb(var(--color-neutral-600));
-    max-width: 450px;
+    max-width: 800px;
   }
 
   .dark .image-caption {
     color: rgb(var(--color-neutral-400));
   }
 
-  /* Mobile responsiveness */
   @media (max-width: 768px) {
-    .image-gallery img {
+    .image-gallery img,
+    .video-embed {
       height: 400px;
       min-width: 300px;
     }
@@ -116,7 +174,8 @@
   }
 
   @media (max-width: 480px) {
-    .image-gallery img {
+    .image-gallery img,
+    .video-embed {
       height: 300px;
       min-width: 250px;
     }

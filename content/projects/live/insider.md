@@ -1,6 +1,7 @@
 ---
-title: "insider"
+title: "Insider"
 year: (2019 - ongoing)
+duration: 70:00
 subtitle: mixed reality performance, one-on-one
 date: 2019-11-30
 type: "projects"
